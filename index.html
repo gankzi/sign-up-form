@@ -27,49 +27,94 @@
         <div class="content-top">
           <h2>
             This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
-            <em>now</em> to get started.
+            this in your life to help you realize your deepest dreams.
           </h2>
+          <h2>Sign up <em>now</em> to get started.</h2>
           <br />
-          <h2>You <em>Know</em> you want to.</h2>
+          <h2 class="heading-bottom">You <em>Know</em> you want to.</h2>
         </div>
         <div id="content">
           <h2>Let's do this!</h2>
-          <form action="">
+          <form action="" method="post" id="create-account">
             <div class="form-container">
               <div class="name-input">
                 <div class="inside-input">
                   <label for="firstName">FIRST NAME *</label>
-                  <input type="text" name="firstName" id="firstName" />
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder=" "
+                    required
+                  />
                 </div>
                 <div class="inside-input">
                   <label for="lastName">LAST NAME</label>
-                  <input type="text" name="lastName" id="lastName" />
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder=" "
+                  />
                 </div>
               </div>
               <div class="info-input">
                 <div class="inside-input">
                   <label for="email">EMAIL *</label>
-                  <input type="email" name="email" id="email" />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder=" "
+                    required
+                  />
                 </div>
                 <div class="inside-input">
                   <label for="phone-num">PHONE NUMBER</label>
-                  <input type="tel" name="tel" id="phone-num" />
+                  <input
+                    type="num"
+                    name="tel"
+                    id="phone-num"
+                    placeholder=" "
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  />
                 </div>
               </div>
               <div class="pw-input">
                 <div class="inside-input">
                   <label for="password">PASSWORD *</label>
-                  <input type="password" name="password" id="password" />
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder=" "
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                    ;
+                    title="Password must be minimum of 8 characters long, consisting of at least one letter and one number"
+                    ;
+                    required
+                  />
                 </div>
                 <div class="inside-input">
                   <label for="confirm-pw">CONFIRM PASSWORD *</label>
-                  <input type="password" name="password" id="confirm-pw" />
+                  <input
+                    type="password"
+                    name="password"
+                    id="confirm-pw"
+                    placeholder=" "
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                    ;
+                    required
+                  />
                 </div>
               </div>
             </div>
-            <button type="submit">Create Account</button>
           </form>
+        </div>
+        <div id="content-bottom">
+          <button type="submit" form="create-account">Create Account</button>
+          <br />
+          <h3>Already have an account? <a href="" class="log-in">Log in</a></h3>
         </div>
       </div>
     </div>
