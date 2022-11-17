@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url("../Norse-Bold.otf") format("opentype");
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.4)
+}
+
+#logo {
+    width: 10vw;
+    height: 22vh;
+}
+
+#logo-title {
+    font-family: "Norse";
+    font-size: 16rem;
+    color: white;
+}
+
+#left {
+    width: 40vw;
+    height: 100vh;
+    background-image: url(max-saeling-FGMpA9F_Jnk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#right {
+    
+    width: 60vw;
+    height: 100vh;
+}
